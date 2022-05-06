@@ -1,9 +1,10 @@
 {% extends "MainApp/base.html" %} 
+{% load static %} 
 
 {% block content %} 
 
 <p>
-    Calebs Pizzeria. 
+    Calebs Pizzeria.  
 </p>
-
+<img src="{% static 'img/pizzeria.jpg' %}">
 {% endblock content %} 

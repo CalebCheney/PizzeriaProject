@@ -1,6 +1,7 @@
 from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+
 from . import views
 
 app_name = 'MainApp'
@@ -13,4 +14,5 @@ urlpatterns = [
     path('comments/<int:pizza_id>/', views.comments, name='comments'),
 ]
 
-urlpatterns += staticfiles_urlpatterns()
+
+#urlpatterns += staticfiles_urlpatterns()

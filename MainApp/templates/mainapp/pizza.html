@@ -1,4 +1,5 @@
 {% extends "MainApp/base.html" %} 
+{% load static %} 
 
 {% block content %} 
 
@@ -18,7 +19,7 @@
 
 
 {% if pizza.image %} 
-    <img src="{{pizza.image.url}}">
+    <img style='max-width:500px' src="{{ pizza.image.url }}">
 {% endif %} 
 
 
